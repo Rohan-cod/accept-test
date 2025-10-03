@@ -2,28 +2,74 @@
 <html>
   <head>
     <title>Accept Type Test</title>
+    <style>
+      body { font-family: -apple-system, Arial, sans-serif; padding: 20px; }
+      .test { margin-bottom: 18px; }
+      label { display: block; margin-bottom: 6px; font-weight: 600; }
+    </style>
   </head>
   <body>
-    <h2>Default (no accept)</h2>
-    <input type="file"><br><br>
+    <h1>File Input Accept= Tests</h1>
 
-    <h2>Image only</h2>
-    <input type="file" accept="image/*"><br><br>
+    <div class="test">
+      <label>Default (no accept)</label>
+      <input type="file">
+      <div><small>accept= (none)</small></div>
+    </div>
 
-    <h2>Video only</h2>
-    <input type="file" accept="video/*"><br><br>
+    <div class="test">
+      <label>Image only</label>
+      <input type="file" accept="image/*">
+      <div><small>accept="image/*"</small></div>
+    </div>
 
-    <h2>PDF only</h2>
-    <input type="file" accept=".pdf"><br><br>
+    <div class="test">
+      <label>Video only</label>
+      <input type="file" accept="video/*">
+      <div><small>accept="video/*"</small></div>
+    </div>
 
-    <h2>Image + PDF</h2>
-    <input type="file" accept="image/*,.pdf"><br><br>
+    <div class="test">
+      <label>PDF only</label>
+      <input type="file" accept=".pdf">
+      <div><small>accept=".pdf"</small></div>
+    </div>
 
-    <h2>Custom intouch types</h2>
-    <input type="file" accept="intouch/image"><br><br>
-    <input type="file" accept="intouch/video"><br><br>
-    <input type="file" accept="intouch/file"><br><br>
-    <input type="file" accept="intouch/scanner"><br><br>
-    <input type="file" accept="intouch/*"><br><br>
+    <div class="test">
+      <label>Image + PDF</label>
+      <input type="file" accept="image/*,.pdf">
+      <div><small>accept="image/*,.pdf"</small></div>
+    </div>
+
+    <div class="test">
+      <label>Custom intouch/image</label>
+      <input type="file" accept="intouch/image">
+      <div><small>accept="intouch/image"</small></div>
+    </div>
+
+    <div class="test">
+      <label>Custom intouch/video</label>
+      <input type="file" accept="intouch/video">
+      <div><small>accept="intouch/video"</small></div>
+    </div>
+
+    <div class="test">
+      <label>Custom intouch/file</label>
+      <input type="file" accept="intouch/file">
+      <div><small>accept="intouch/file"</small></div>
+    </div>
+
+    <div class="test">
+      <label>Custom intouch/scanner</label>
+      <input type="file" accept="intouch/scanner">
+      <div><small>accept="intouch/scanner"</small></div>
+    </div>
+
+    <div class="test">
+      <label>Custom intouch/* (all)</label>
+      <input type="file" accept="intouch/*">
+      <div><small>accept="intouch/*"</small></div>
+    </div>
+
   </body>
 </html>
