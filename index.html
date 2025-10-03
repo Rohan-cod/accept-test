@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Accept Type Test</title>
+  </head>
+  <body>
+    <h2>Default (no accept)</h2>
+    <input type="file"><br><br>
+
+    <h2>Image only</h2>
+    <input type="file" accept="image/*"><br><br>
+
+    <h2>Video only</h2>
+    <input type="file" accept="video/*"><br><br>
+
+    <h2>PDF only</h2>
+    <input type="file" accept=".pdf"><br><br>
+
+    <h2>Image + PDF</h2>
+    <input type="file" accept="image/*,.pdf"><br><br>
+
+    <h2>Custom intouch types</h2>
+    <input type="file" accept="intouch/image"><br><br>
+    <input type="file" accept="intouch/video"><br><br>
+    <input type="file" accept="intouch/file"><br><br>
+    <input type="file" accept="intouch/scanner"><br><br>
+    <input type="file" accept="intouch/*"><br><br>
+  </body>
+</html>
